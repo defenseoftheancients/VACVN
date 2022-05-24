@@ -1,0 +1,143 @@
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+.thantrang {
+  width: 100%;
+  min-height: calc(100vh - 66px);
+  background-color: #27aae1;
+}
+
+.thantrang__noidung {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 100%;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.thantrang__text {
+  width: 100%;
+  height: 500px;
+  padding-top: 140px;
+}
+
+.thantrang__text h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 400;
+  color: #181818;
+}
+
+.thantrang__text p {
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 10px 0;
+  margin: 10px 0;
+}
+
+.thantrang__text a {
+  display: block;
+  width: 200px;
+  height: 50px;
+  background-color: #dc3545;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.thantrang__text a:hover {
+  background-color: white;
+  color: black;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 1050px) {
+  .thantrang__text h1 {
+    font-size: 32px;
+    font-weight: 400;
+  }
+  .thantrang__text p {
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 1100px) {
+  .dautrang {
+    padding: 0;
+  }
+  .dautrang__nutlienhe {
+    margin-right: 2.5%;
+  }
+  .thantrang__noidung {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+  }
+  .thantrang__noidung svg {
+    width: 100%;
+    padding-top: 30px;
+    height: 100%;
+  }
+  .thantrang__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 200px;
+    position: absolute;
+    z-index: 99;
+  }
+  .thantrang__text::after {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .thantrang__text h1 {
+    font-size: 36px;
+    color: #dc3545;
+    text-align: center;
+  }
+  .thantrang__text p {
+    text-align: center;
+    font-size: 16px;
+  }
+  .thantrang__text a {
+    line-height: 50px;
+  }
+}
+/*# sourceMappingURL=trangchu.css.map */

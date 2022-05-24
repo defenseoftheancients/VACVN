@@ -1,0 +1,337 @@
+.modal {
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place */
+	z-index: 1;
+	/* Sit on top */
+	padding: 100px 0;
+	/* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height */
+	overflow: auto;
+	/* Enable scroll if needed */
+	background-color: black;
+	/* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4);
+	/* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-box {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 450px;
+	border-radius: 10px;
+}
+
+.modal-content {
+	padding: 20px 0 15px 0;
+}
+
+.modal-heading {
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 30px;
+	color: #27aae1;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+label {
+	font-weight: bold;
+	font-size: 15px;
+}
+
+label span {
+	color: #f50000;
+}
+
+.form-control {
+	margin-top: 10px;
+	display: block;
+	width: 100%;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border-radius: .25rem;
+	outline: 0;
+	font-size: 13px;
+}
+
+.form-control::-webkit-input-placeholder {
+	color: #858796;
+	font-weight: 300;
+	font-size: 13px;
+}
+
+.form-control:-ms-input-placeholder {
+	color: #858796;
+	font-weight: 300;
+	font-size: 13px;
+}
+
+.form-control::-ms-input-placeholder {
+	color: #858796;
+	font-weight: 300;
+	font-size: 13px;
+}
+
+.form-control::placeholder {
+	color: #858796;
+	font-weight: 300;
+	font-size: 13px;
+}
+
+.form-control:focus-visible {
+	background-color: #fff;
+	border: 1px solid #86b7fe;
+	outline: none !important;
+	-webkit-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+	box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.form-control:focus {
+	background-color: #fff;
+	border-color: #86b7fe;
+	outline: none;
+	-webkit-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+	box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.form-control option {
+	color: #858796;
+	font-size: 13px;
+	width: 100%;
+}
+
+input[type=submit] {
+	display: block;
+	margin-top: 30px;
+	background: #27aae1;
+	border: none;
+	cursor: pointer;
+	padding: 15px 35px;
+	border-radius: 5px;
+	color: white;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+input[type=submit]:hover {
+	background: #2e86de;
+}
+
+/* The Close Button */
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover, .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.content {
+	margin-top: 50px;
+	position: relative;
+	width: 100%;
+}
+
+.content-cards {
+	max-width: 90%;
+	margin: 0 auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: wrap row;
+	flex-flow: wrap row;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+}
+
+.content-card {
+	border-radius: 5px;
+	margin: 0px 20px 20px 0px;
+	cursor: pointer;
+	background-color: white;
+	min-width: 240px;
+	min-height: 100px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 10px 20px;
+	-webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+.content-cardleft>p {
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.content-cardright>i {
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	line-height: 50px;
+}
+
+.content [id^=cardadd] {
+	border-top: 4px solid #1CC88A;
+	color: #1CC88A;
+}
+
+.content [id^=cardupdate] {
+	border-top: 4px solid #1CC88A;
+	color: #1CC88A;
+}
+
+.content [id^=cardupdate] i {
+	background-color: #D7EDD8;
+}
+
+.content [id^=cardadd] i {
+	background-color: #D7EDD8;
+}
+
+.content #cardupdateuser {
+	border-top: 4px solid #FFC107;
+	color: #FFC107;
+}
+
+.content #cardupdateuser i {
+	background-color: #FFF1C8;
+}
+
+.content-table {
+	-webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+	border-radius: 5px;
+	max-width: 90%;
+	border: 1px solid #e3e6f0;
+	margin: 20px auto 0px auto;
+}
+
+.content-headingtable {
+	border-radius: 5px 5px 0px 0px;
+	font-size: 18px;
+	vertical-align: middle;
+	font-weight: bold;
+	background-color: #f8f9fc;
+	padding: 15px 0px 15px 15px;
+	border-bottom: 1px solid #dfe6e9;
+	color: #27aae1;
+}
+
+.content-tablerows {
+	overflow-x: auto;
+	padding: 15px;
+	background-color: white;
+}
+
+.content-tablerows table {
+	width: 100%;
+}
+
+.content-tablerows table thead {
+	vertical-align: bottom;
+}
+
+.content-tablerows table thead th {
+	border-bottom: 3px solid #e3e6f0;
+}
+
+.content-tablerows table tr {
+	border-width: 1px 0;
+}
+
+.content-tablerows table th {
+	white-space: nowrap;
+	text-align: left;
+	color: #858796;
+	font-weight: bold;
+	font-size: 17px;
+	border: 1px solid #e3e6f0;
+	padding: 15px;
+}
+
+.content-tablerows table td {
+	color: #858796;
+	white-space: nowrap;
+	text-align: left;
+	border: 1px solid #e3e6f0;
+	padding: 15px;
+	font-weight: 300;
+}
+.content-tablerows table td i {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+.content-tablerows table td i.fa-pen-to-square {
+	cursor: pointer;
+	text-align: center;
+	color: #1CC88A;
+}
+
+.content-tablerows table td i.fa-trash {
+	color: #ff6b6b;
+	cursor: pointer;
+	text-align: center;
+}
+/* .content-tablerows table td:nth-last-of-type(1) {
+  text-align: center;
+}
+
+.content-tablerows table td:nth-last-of-type(1) i {
+  cursor: pointer;
+  color: #ff6b6b;
+}
+
+.content-tablerows table td:nth-last-of-type(2) {
+  text-align: center;
+}
+
+.content-tablerows table td:nth-last-of-type(2) a {
+  color: #1CC88A;
+} */
+
+/* .content-tablerows table td:nth-last-of-type(2) i {
+  color: #1CC88A;
+  cursor: pointer;
+} */
+/*# sourceMappingURL=content.css.map */

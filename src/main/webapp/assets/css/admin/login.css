@@ -1,0 +1,228 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  height: 100vh;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+
+.login {
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 90%;
+  width: 90%;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+}
+
+.login-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px 0px 0 10px;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  background: transparent;
+}
+
+.login-left svg {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.login-right {
+  position: relative;
+  border-radius: 0px 10px 10px 0px;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  background: white;
+}
+
+.login-right svg {
+  display: none;
+}
+
+.login-box {
+  width: 80%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.login-heading {
+  font-weight: bold;
+  font-size: 25px;
+  color: #9599E2;
+}
+
+.login .form-group {
+  margin: 30px 0px;
+}
+
+.login label {
+  font-weight: bold;
+  font-size: 15px;
+  color: #9599E2;
+}
+
+.login .form-control {
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1.5px solid #d1d3e2;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: .25rem;
+  outline: 0;
+  font-size: 13px;
+}
+
+.login .form-control::-webkit-input-placeholder {
+  color: #858796;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.login .form-control:-ms-input-placeholder {
+  color: #858796;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.login .form-control::-ms-input-placeholder {
+  color: #858796;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.login .form-control::placeholder {
+  color: #858796;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.login .form-control:focus-visible {
+  background-color: #fff;
+  border: 1.5px solid #86b7fe;
+  outline: none !important;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.login .form-control:focus {
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: none;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.login input[type=submit] {
+  display: block;
+  margin-top: 30px;
+  background: #9599E2;
+  border: none;
+  cursor: pointer;
+  padding: 15px 35px;
+  border-radius: 5px;
+  color: white;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.login input[type=submit]:hover {
+  background: #7c80d3;
+}
+/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,388 @@
+body {
+  margin: 0;
+}
+
+.chonngay {
+  background: transparent;
+  border-radius: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 27vw;
+  max-width: 223px;
+  min-width: 206px;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  padding: 5px 14px 5px 18px;
+  font-size: 14px;
+  min-height: 40px;
+  color: #666;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+
+.chonngay:focus,
+.chonthu:focus {
+  outline: none;
+}
+
+.chonthu {
+  background: transparent;
+  border-radius: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 27vw;
+  max-width: 223px;
+  min-width: 206px;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  padding: 5px 10px 5px 18px;
+  font-size: 14px;
+  min-height: 40px;
+  color: #666;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  background: url(../../img/down-arrow.svg) no-repeat right white; 
+  background-size: 10px 10px;
+  background-position-x: calc(100% - 18px);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.feedback {
+  margin-top: 15px;
+  color: #F61B1B;
+}
+
+.chonthu option {
+  color: #666;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+
+.ntim {
+  /*  width: 100px;
+    height: 40px;*/
+  padding: 11.5px 17.6px;
+  background: #27aae1;
+  white-space: nowrap;
+  border-radius: 0;
+  font-size: 14px;
+  color: #fff;
+  -webkit-transition: all 0.2s ease-out, color 0.2s ease-out;
+  transition: all 0.2s ease-out, color 0.2s ease-out;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.ntim:hover {
+  background: #00a7d3;
+}
+
+/*================================*/
+.line {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.ochua {
+  /*min-height: 100vh;*/
+  max-width: 1400px;
+  margin: 0 auto;
+  min-width: 225px;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  padding: 15px;
+  font-family: "Lato", sans-serif;
+}
+
+.thantrang {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.ochua form {
+  width: 100%;
+  max-width: 790px;
+  margin: 0;
+}
+
+.ochua form .form-trong {
+  width: 100%;
+}
+
+.ochua form .form-trong .hop-dauvao {
+  position: relative;
+}
+
+.ochua form .form-trong .hop-dauvao input {
+  height: 100%;
+  border: 0;
+  background: #fff;
+  display: block;
+  width: 100%;
+  padding: 10px 32px 10px 70px;
+  font-size: 18px;
+  color: #666;
+  border-radius: 3px;
+  height: 70px;
+  color: #555;
+  font-family: "Lato", sans-serif;
+}
+
+.ochua form .form-trong .hop-dauvao option:first-child {
+  display: none;
+}
+
+.ochua form .form-trong .hop-dauvao input.placeholder {
+  color: #999;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.ochua form .form-trong .hop-dauvao input:-moz-placeholder {
+  color: #999;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.ochua form .form-trong .hop-dauvao input::-webkit-input-placeholder {
+  color: #999;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.ochua form .form-trong .hop-dauvao input:hover,
+.ochua form .form-trong .hop-dauvao input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: 0;
+}
+
+.ochua form .form-trong .hop-dauvao .nut-tim {
+  min-width: 100px;
+  height: 40px;
+  padding: 0 15px;
+  background: #27aae1;
+  white-space: nowrap;
+  border-radius: 0;
+  font-size: 14px;
+  color: #fff;
+  -webkit-transition: all 0.2s ease-out, color 0.2s ease-out;
+  transition: all 0.2s ease-out, color 0.2s ease-out;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+}
+
+.ochua form .form-trong .hop-dauvao .nut-tim:hover,
+.ochua form .form-trong .hop-dauvao .nut-tim:focus {
+  background: #00a7d3;
+}
+
+.ochua form .form-trong .hop-dauvao .nut-xoa {
+  min-width: 100px;
+  height: 40px;
+  padding: 0 15px;
+  background: transparent;
+  white-space: nowrap;
+  border-radius: 0;
+  font-size: 14px;
+  color: #666;
+  -webkit-transition: all 0.2s ease-out, color 0.2s ease-out;
+  transition: all 0.2s ease-out, color 0.2s ease-out;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.ochua form .form-trong .hop-dauvao .nut-xoa:hover,
+.ochua form .form-trong .hop-dauvao .nut-xoa:focus {
+  color: #000;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.ochua form .form-trong .basic-search {
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  border-bottom: 2px solid #00bbec;
+}
+
+.ochua form .form-trong .basic-search .hop-dauvao {
+  width: 100%;
+}
+
+.ochua form .form-trong .basic-search .hop-dauvao input {
+  padding: 10px 80px 10px 40px;
+}
+
+.ochua form .form-trong .basic-search .hop-dauvao .icon-wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 60px;
+  height: 100%;
+}
+
+.ochua form .form-trong .basic-search .hop-dauvao .icon-wrap svg {
+  width: 34px;
+  height: 34px;
+  fill: #ccc;
+}
+
+.ochua form .form-trong .tim-kiem {
+  background: #fff;
+  padding: 40px;
+}
+
+.ochua form .form-trong .tim-kiem .ten {
+  font-size: 25px;
+  display: block;
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+.ochua form .form-trong .tim-kiem .hang {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.ochua form .form-trong .tim-kiem .hang.second {
+  margin-bottom: 46px;
+}
+
+.ochua form .form-trong .tim-kiem .hang.third {
+  margin-bottom: 0;
+}
+
+.ochua form .form-trong .tim-kiem .hang.third .hop-dauvao {
+  width: 100%;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.ochua form .form-trong .tim-kiem .hang.third .hop-dauvao .khg-trong {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: start;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 110px;
+  color: #666;
+  font-size: 14px;
+}
+
+.ochua form .form-trong .tim-kiem .hang.third .hop-dauvao .khg-trong span {
+  color: #00bbec;
+  padding-right: 5px;
+}
+
+.ochua form .form-trong .tim-kiem .hop-dauvao {
+  width: calc((100% - 40px) / 3);
+}
+
+.ochua form .form-trong .tim-kiem .chon-dauvao {
+  height: 40px;
+}
+
+.hop-dauvao option::first-child {
+  display: none;
+}
+
+.select option:first-child {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .ochua form .form-trong .basic-search .hop-dauvao input {
+    padding: 10px 80px 10px 15px;
+  }
+  .ochua form .form-trong .basic-search .hop-dauvao .icon-wrap {
+    width: 80px;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+  }
+  .ochua form .form-trong .basic-search .hop-dauvao .icon-wrap svg {
+    width: 30px;
+    height: 30px;
+  }
+  .ochua form .form-trong .tim-kiem {
+    padding: 30px 15px;
+  }
+  .ochua form .form-trong .tim-kiem .hang {
+    display: block;
+  }
+  .ochua form .form-trong .tim-kiem .hop-dauvao {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .chonngay,
+  .chonthu {
+    width: 100%;
+    max-width: 706px;
+    min-width: 0;
+    margin-bottom: 20px;
+  }
+  .chonthu,
+  .chonthu:focus {
+    background-position-x: calc(100% - 2.5vw);
+  }
+  .dautrang {
+    padding: 0;
+  }
+  .dautrang__nutlienhe {
+    margin-right: 2.5%;
+  }
+}
+/*# sourceMappingURL=timkiem.css.map */
